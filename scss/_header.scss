@@ -113,11 +113,12 @@
   &::before {
     position: absolute;
     content:'';
+    cursor: pointer;
 
     width: 21px;
     height: 21px;
 
-    top: -8px;
+    top: -9px;
     left: -35px;
 
     background: url("../img/decor/search.svg") no-repeat center;

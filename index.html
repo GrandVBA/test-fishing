@@ -236,8 +236,10 @@
 				</div>
 
 				<section class="collection hits">
-					<h2 class="collection__title">Хиты продаж</h2>
-					<a href="" class="collection__link">Весь каталог</a>
+					<div class="hits__wrap">
+						<h2 class="collection__title">Хиты продаж</h2>
+						<a href="#" class="collection__link">Весь каталог</a>
+					</div>
 					<ul class="collection__list">
 						<li class="collection__item collection-best">
 							<a href="#" class="collection-best__link">
@@ -296,8 +298,10 @@
 				</section>
 
 				<section class="collection new">
-					<h2 class="collection__title">Новинки</h2>
-					<a href="" class="collection__link">Весь каталог</a>
+					<div class="new__wrap">
+						<h2 class="collection__title">Новинки</h2>
+						<a href="#" class="collection__link">Весь каталог</a>
+					</div>
 					<ul class="collection__list">
 						<li class="collection__item collection-best">
 							<a href="#" class="collection-best__link">
@@ -356,40 +360,55 @@
 				</section>
 
 				<section class="news">
-					<h2 class="news__title">Последние новости</h2>
-					<a href="#" class="news__link">Все новости</a>
-					<ul class="news__list ">
+					<div class="news__wrap">
+						<h2 class="news__title">Последние новости</h2>
+						<a href="#" class="news__link">Все новости</a>
+					</div>
+					<ul class="news__list">
 						<li class="news__item">
-							<img src="#" alt="Фотография новости">
+							<div class="news__img">
+								<img src="img/content/man-news.jpg" alt="Фотография новости">
+							</div>
 							<h3 class="news__name">Презентация нового продукта</h3>
 							<p class="news__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
 							<a href="" class="news__detail">Подробнее</a>
 							<span class="news__date">13.02.2019</span>
 						</li>
 						<li class="news__item">
-							<img src="#" alt="Фотография новости">
+							<div class="news__img">
+								<img src="img/content/lodka.jpg" alt="Фотография новости">
+							</div>
 							<h3 class="news__name">Презентация нового продукта</h3>
 							<p class="news__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
 							<a href="" class="news__detail">Подробнее</a>
 							<span class="news__date">13.02.2019</span>
 						</li>
 						<li class="news__item">
-							<img src="#" alt="Фотография новости">
-							<h3 class="news__name">Презентация нового продукта</h3>
-							<p class="news__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
-							<a href="" class="news__detail">Подробнее</a>
-							<span class="news__date">13.02.2019</span>
+							<div class="news__img">
+								<img src="img/content/man-v-lodke.jpg" alt="Фотография новости">
+							</div>
+							<div class="news__content">
+								<h3 class="news__name">Презентация нового продукта</h3>
+								<p class="news__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+								<a href="" class="news__detail">Подробнее</a>
+								<span class="news__date">13.02.2019</span>
+							</div>
 						</li>
 					</ul>
 				</section>
+			</div>
 
 				<section class="subscribe">
-					<h2 class="subscribe__title">Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок</h2>
-					<form action="" class="subscribe__form">
-						<input type="email" placeholder="Ваш e-mail">
-						<input type="submit" value="Подписаться">
-					</form>
+					<div class="wrapper">
+						<h2 class="subscribe__title">Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок</h2>
+						<form action="" class="subscribe__form">
+							<input type="email" placeholder="Ваш e-mail">
+							<button class="subscribe__btn">Подписаться</button>
+						</form>
+					</div>
 				</section>
+
+			<div class="wrapper">
 
 				<article class="sale">
 					<ul class="sale__list">
