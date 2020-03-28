@@ -1,0 +1,99 @@
+.sale {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    padding: 0;
+    margin: 58px 0 0 0;
+  }
+  &__item {
+    box-shadow: 0px 55px 30px -35px rgba(50, 50, 50, 0.3);
+    transition: all 0.4s;
+    &:hover {
+      box-shadow: 0px 65px 30px -45px rgba(50, 50, 50, 0.7);
+    }
+    
+    &:first-child {
+      img {
+        margin: -8px 21px 0 0;
+        z-index: 1;
+      }
+    }
+    &:last-child {
+      img {
+        margin: 27px 15px 0 0;
+        z-index: 1;
+      }
+    }
+  }
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 555px;
+    height: 279px;
+
+    background: radial-gradient(#30b6e8, #0389c3);
+    border-radius: 3px;
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 39px;
+      height: 39px;
+
+      top: 199px;
+      left: 43px;
+
+      background: url("../img/decor/arrow-point-to-right-circle-big.png") no-repeat center;
+    }
+    &::after {
+      position: absolute;
+
+      font-size: 95px;
+      line-height: 130px;
+      font-weight: 700;
+      opacity: 0.22;
+      color: #ffffff;
+
+      width: 240px;
+      height: 80px;
+
+      top: 145px;
+      left: 135px;
+    }
+  }
+  &__item:first-child .sale__link::after {
+    content: '-30%';
+  }
+  &__item:last-child .sale__link::after {
+    content: '-10%';
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #ffffff;
+
+    width: 300px;
+    height: 100px;
+
+    margin: 40px 0 0 45px;
+  }
+  &__date {
+    position: absolute;
+
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #5dd5fe;
+    letter-spacing: 1px;
+
+    top: 55px;
+    left: 240px;
+
+    margin: 0;
+  }
+}
