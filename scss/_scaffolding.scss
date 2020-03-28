@@ -52,16 +52,23 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  //height: 100%;
 }
 
-h1, h2, p, a, label, input, select, option {
+/*h1, h2, p, a, label, input, select, option {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
+}*/
 
-/*.wrapper {
+.wrapper {
   margin: 0 auto;
   width: 1140px;
-}*/
+}
+
+.flex-menu-quick {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 30px 0 0 0;
+}
