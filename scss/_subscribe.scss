@@ -18,6 +18,7 @@
   input[type="email"] {
     width: 854px;
     height: 58px;
+    outline: none;
 
     border: none;
     border-top-left-radius: 3px;
@@ -46,5 +47,6 @@
     background: linear-gradient(90deg,#33b9e9, #088ec7);
     box-shadow: 0px 25px 30px -20px rgba(50, 50, 50, 0.2);
     cursor: pointer;
+    outline: none;
   }
 }

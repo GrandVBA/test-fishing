@@ -77,7 +77,12 @@
       text-transform: uppercase;
       color: #ffffff;
       opacity: 0.5;
+      transition: all 0.2s;
       letter-spacing: 1px;
+      &:hover,
+      &:focus {
+        opacity: 0.9;
+      }
     }
   }
   &__contacts,
@@ -154,8 +159,11 @@
         height: 18px;
       }
       &--inst:hover,
+      &--inst:focus,
       &--fb:hover,
-      &--vk:hover {
+      &--fb:focus,
+      &--vk:hover,
+      &--vk:focus {
         path {
           opacity: 1;
         }

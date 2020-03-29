@@ -18,6 +18,43 @@
     letter-spacing: 1px;
     margin: 0 0 0 35px;
   }
+  &__arrow {
+    position: relative;
+    margin: 0 0 0 auto;
+    &--left,
+    &--right {
+      border: none;
+      background: transparent;
+      outline: none;
+    }
+    &--left::before,
+    &--right::before {
+      position: absolute;
+      content: '';
+      cursor: pointer;
+
+      width: 27px;
+      height: 27px;
+
+      transition: all 0.3s;
+      background:url("../img/decor/arrow-point-to-right-circle.png") no-repeat center;
+    }
+    &--left::before {
+      top: 0;
+      left: -30px;
+      transform: rotate(180deg);
+    }
+    &--right::before {
+      top: 0;
+      left: 0;
+    }
+    &--left:active::before{
+      transform:scale(0.8) rotate(180deg);
+    }
+    &--right:active::before {
+      transform:scale(0.8);
+    }
+  }
   &__list {
     display: flex;
     flex-direction: row;
