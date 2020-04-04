@@ -479,8 +479,6 @@ a {
   width: 201px;
   height: 46px;
   padding: 0 0 0 62px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   outline: none;
 }
 
